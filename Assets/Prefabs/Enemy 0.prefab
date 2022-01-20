@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5680097012670178545}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5604484782743314296}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8606636425878509833
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -182,6 +182,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   hitEffect: {fileID: 6300109546686586001, guid: 3f067b4d10aa62a4aa12aa8599e09072, type: 3}
+  applyCameraShake: 0
+  isPlayer: 0
+  score: 50
 --- !u!114 &4525613705918306520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,10 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3c53b825edc0194094b27c5b7da389c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 2572119596038851592, guid: 46ab7bbf67bcc88439212ee5b4efee1c, type: 3}
-  projectileSpeed: 10
-  projectileLifetime: 5
-  baseFiringRate: 1
+  shootingConfig: {fileID: 11400000, guid: f5bbf6e16dd47dd4eb113b4190cc90f0, type: 2}
   firingRateVariance: 0.5
   minimumFiringRate: 0.1
   useAI: 1

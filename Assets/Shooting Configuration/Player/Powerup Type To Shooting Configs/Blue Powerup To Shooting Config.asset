@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9ffaf14038399b4c9d2e18235456279, type: 3}
+  m_Name: Blue Powerup To Shooting Config
+  m_EditorClassIdentifier: 
+  powerupType: 0
+  shootingConfigs:
+  - {fileID: 11400000, guid: 06d33b0c18d9f944e81f9d07f85b7b85, type: 2}
+  - {fileID: 11400000, guid: 8564059bec885c14cbb544fe0227a58e, type: 2}
+  - {fileID: 11400000, guid: f33333cabfd6f2448b8c6e90f77a02e1, type: 2}
+  - {fileID: 11400000, guid: 5b950978453eede4cb27ba4df70480fa, type: 2}
+  - {fileID: 11400000, guid: 9bc42364ba8684f44a85b5e65cb38ddd, type: 2}

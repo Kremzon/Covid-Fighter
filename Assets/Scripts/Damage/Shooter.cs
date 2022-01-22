@@ -78,4 +78,9 @@ public class Shooter : MonoBehaviour
             yield return new WaitForSeconds(timeToNextProjectile);
         }
     }
+
+    public void SetShootingConfig(ShootingConfigSO newShootingConfig)
+    {
+        shootingConfig = newShootingConfig;
+    }
 }

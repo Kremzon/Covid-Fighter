@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 2313917211173623173}
   - component: {fileID: 4525613705918306520}
   - component: {fileID: -8108077179477212807}
+  - component: {fileID: -6094035646536217895}
   m_Layer: 7
   m_Name: Enemy 0
   m_TagString: Untagged
@@ -180,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6031bf5d47ff294ab6eb3c305d3cb9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 30
   hitEffect: {fileID: 6300109546686586001, guid: 3f067b4d10aa62a4aa12aa8599e09072, type: 3}
   applyCameraShake: 0
   isPlayer: 0
@@ -215,3 +216,18 @@ MonoBehaviour:
   minimumFiringRate: 0.1
   useAI: 1
   isFiring: 0
+--- !u!114 &-6094035646536217895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6042051080126846325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d002107b89b3394ca1184cb28ff09c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  possiblePowerups:
+  - {fileID: 4497024244396667725, guid: 674b5e210b98a7347b66b79ef1ce978c, type: 3}
+  chanceToDrop: 0.2

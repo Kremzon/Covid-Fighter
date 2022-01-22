@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af2da586449acc74783db76caa37fc09, type: 3}
+  m_Name: Player Shooting Config 2 - 2 Center
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 2572119596038851592, guid: 2b3287c8d24ce6a4eb5772bcb4e8fcf2, type: 3}
+  shots:
+  - {fileID: 11400000, guid: 37465ec43094b95489f1feafe13c2e6e, type: 2}
+  - {fileID: 11400000, guid: 52827bbd8e2ed0a4b8c608b9e67dabf8, type: 2}
+  baseFiringRate: 0.2
+  projectileLifetime: 5

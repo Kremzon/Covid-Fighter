@@ -68,6 +68,12 @@ public class Health : MonoBehaviour
         if (!isPlayer)
         {
             scoreKeeper.ModifyScore(score);
+            PowerupDropper powerupDropper = GetComponent<PowerupDropper>();
+
+            if (powerupDropper != null)
+            {
+                powerupDropper.Drop();
+            }
         }
         else
         {

@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af2da586449acc74783db76caa37fc09, type: 3}
-  m_Name: Player Shooting Config 1 Center 2 Angled
+  m_Name: Player Shooting Config 4 - 4 Center
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 2572119596038851592, guid: 2b3287c8d24ce6a4eb5772bcb4e8fcf2, type: 3}
   shots:
-  - {fileID: 11400000, guid: 3363fd64d04e2b24181ddd8c80e291b1, type: 2}
-  - {fileID: 11400000, guid: 65c5d324f64776548aaeed55a702171b, type: 2}
-  - {fileID: 11400000, guid: 491b35e8bf3faa746bebcb6d45b95395, type: 2}
+  - {fileID: 11400000, guid: 37465ec43094b95489f1feafe13c2e6e, type: 2}
+  - {fileID: 11400000, guid: 24beb5ba7b69d6541bbcaa39f6cb8a70, type: 2}
+  - {fileID: 11400000, guid: 52827bbd8e2ed0a4b8c608b9e67dabf8, type: 2}
+  - {fileID: 11400000, guid: b9bc564625e2f1443bb4d710025a8e43, type: 2}
   baseFiringRate: 0.2
   projectileLifetime: 5

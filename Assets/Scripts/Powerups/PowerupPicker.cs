@@ -8,6 +8,7 @@ public class PowerupPicker : MonoBehaviour
     [SerializeField] PowerupTypes initialPowerupType = PowerupTypes.Blue;
 
     Shooter shooter;
+    Health health;
     PowerupTypes currentPowerupType;
     int currentShootingConfigIndex;
     Dictionary<PowerupTypes, List<ShootingConfigSO>> powerupTypeToShootingConfigs = new Dictionary<PowerupTypes, List<ShootingConfigSO>>();
@@ -16,6 +17,7 @@ public class PowerupPicker : MonoBehaviour
     private void Awake()
     {
         shooter = GetComponent<Shooter>();
+        health = GetComponent<Health>();
     }
 
     private void Start()
@@ -33,8 +35,13 @@ public class PowerupPicker : MonoBehaviour
 
     public void Pickup(PowerupTypes powerupType)
     {
-        if (powerupTypeToShootingConfigs.ContainsKey(powerupType))
+        if (powerupType == PowerupTypes.Health)
         {
+            health.IncreaseHealth(30);
+        }
+        else if (powerupTypeToShootingConfigs.ContainsKey(powerupType))
+        {
+            
             if (currentPowerupType != powerupType)
             {
                 currentPowerupType = powerupType;
@@ -46,6 +53,10 @@ public class PowerupPicker : MonoBehaviour
             }
 
             shooter.SetShootingConfig(powerupTypeToShootingConfigs[currentPowerupType][currentShootingConfigIndex]);
+        }
+        else
+        {
+            Debug.LogError(string.Format("Recieved powerup type {0} that isn't handled", powerupType));
         }
     }
 }

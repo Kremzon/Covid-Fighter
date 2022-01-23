@@ -11,6 +11,12 @@ public class WaveConfigSO : ScriptableObject
     [SerializeField] float timeBetweenEnemySpawn = 1f;
     [SerializeField] float spawnTimeVariance = 0f;
     [SerializeField] float minimumSpawnTime = 0f;
+    [SerializeField] bool shouldLoopPath = false;
+
+    public bool GetShouldLoop()
+    {
+        return shouldLoopPath;
+    }
 
     public Transform GetStartingWaypoint()
     {

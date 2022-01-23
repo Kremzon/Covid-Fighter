@@ -447,7 +447,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 660481083}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bb351884c295594cbfd176442990faf, type: 3}
   m_Name: 
@@ -455,8 +455,12 @@ MonoBehaviour:
   waveConfigs:
   - {fileID: 11400000, guid: 0110aa55a7f3ae14981e554444523bda, type: 2}
   - {fileID: 11400000, guid: fb7d05c458f3a8b4d99af5e9b8075ef4, type: 2}
+  - {fileID: 11400000, guid: 0110aa55a7f3ae14981e554444523bda, type: 2}
+  - {fileID: 11400000, guid: fb7d05c458f3a8b4d99af5e9b8075ef4, type: 2}
+  - {fileID: 11400000, guid: c59f767ceb5e36344b496a88ca4045bb, type: 2}
   timeBetweenWaves: 0
-  isLooping: 1
+  isLooping: 0
+  bossConfig: {fileID: 11400000, guid: b6d1b49332025ab428defff7eb8c6193, type: 2}
 --- !u!4 &660481085
 Transform:
   m_ObjectHideFlags: 0

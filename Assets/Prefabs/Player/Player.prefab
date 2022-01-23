@@ -222,6 +222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerupToShootingConfigs:
   - {fileID: 11400000, guid: 7bf28281a43cfc742942fb4ab232684f, type: 2}
+  - {fileID: 11400000, guid: 142aa28179477d14b99be81dab3ed012, type: 2}
   initialPowerupType: 0
 --- !u!1 &5263603760072297281
 GameObject:

@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af2da586449acc74783db76caa37fc09, type: 3}
-  m_Name: Player Shooting Config 1 - 1 Center
+  m_Name: Player Shooting Config Green 1 - 1 Center
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 2572119596038851592, guid: 2b3287c8d24ce6a4eb5772bcb4e8fcf2, type: 3}
+  projectilePrefab: {fileID: 2572119596038851592, guid: 4f4cece8f59ef164d9b0379b4548925e, type: 3}
   shots:
   - {fileID: 11400000, guid: 3363fd64d04e2b24181ddd8c80e291b1, type: 2}
-  baseFiringRate: 0.2
+  baseFiringRate: 0.3
   projectileLifetime: 5
+  speed: 20

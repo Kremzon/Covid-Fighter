@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af2da586449acc74783db76caa37fc09, type: 3}
-  m_Name: Enemy Shooting Config 1 Center
+  m_Name: Boss Shooting Config 1 Center 2 Angled
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 2572119596038851592, guid: 46ab7bbf67bcc88439212ee5b4efee1c, type: 3}
   shots:
   - {fileID: 11400000, guid: 8aacc2b3fde0f3c46a1b73ba02f18f11, type: 2}
-  baseFiringRate: 1
+  - {fileID: 11400000, guid: 7a1849b2011788546b9802a7bce4f010, type: 2}
+  - {fileID: 11400000, guid: fbaec4aea81b4be449e8f96175c2e32d, type: 2}
+  baseFiringRate: 0.4
   projectileLifetime: 5
-  speed: -10
+  speed: -8

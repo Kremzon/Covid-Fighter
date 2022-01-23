@@ -16,10 +16,16 @@ public class Health : MonoBehaviour
     AudioPlayer audioPlayer;
     ScoreKeeper scoreKeeper;
     LevelManager levelManager;
+    int maxHealth;
 
     public int GetHealth()
     {
         return health;
+    }
+
+    public void IncreaseHealth(int value)
+    {
+        health = Mathf.Clamp(health + value, 0, maxHealth);
     }
 
     private void Awake()
@@ -28,6 +34,7 @@ public class Health : MonoBehaviour
         audioPlayer = FindObjectOfType<AudioPlayer>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         levelManager = FindObjectOfType<LevelManager>();
+        maxHealth = health;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

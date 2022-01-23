@@ -63,7 +63,7 @@ public class Shooter : MonoBehaviour
 
                 if (rb != null)
                 {
-                    rb.velocity = instance.transform.up * shot.GetSpeed();
+                    rb.velocity = instance.transform.up * shootingConfig.GetSpeed();
                 }
 
                 Destroy(instance, shootingConfig.GetProjectileLifeTime());

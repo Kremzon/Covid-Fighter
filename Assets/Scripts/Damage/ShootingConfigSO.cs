@@ -9,6 +9,12 @@ public class ShootingConfigSO : ScriptableObject
     [SerializeField] List<ShotSO> shots;
     [SerializeField] float baseFiringRate = 0.2f;
     [SerializeField] float projectileLifetime = 5f;
+    [SerializeField] float speed = 0f;
+
+    public float GetSpeed()
+    {
+        return speed;
+    }
 
     public List<ShotSO> GetShots()
     {

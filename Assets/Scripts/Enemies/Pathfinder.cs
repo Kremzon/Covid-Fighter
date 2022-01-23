@@ -9,6 +9,7 @@ public class Pathfinder : MonoBehaviour
     WaveConfigSO waveConfig;
     List<Transform> waypoints;
     int waypointIndex = 0;
+    bool isInBackwardsLoop = false;
 
     private void Awake()
     {
@@ -29,7 +30,7 @@ public class Pathfinder : MonoBehaviour
 
     private void FllowPath()
     {
-        if (waypointIndex < waypoints.Count)
+        if (waypointIndex < waypoints.Count && waypointIndex >= 0)
         {
             Vector3 targetPoistion = waypoints[waypointIndex].position;
             float delta = waveConfig.GetMoveSpeed() * Time.deltaTime;
@@ -37,12 +38,35 @@ public class Pathfinder : MonoBehaviour
 
             if (transform.position == targetPoistion)
             {
-                waypointIndex++;
+                if (isInBackwardsLoop)
+                {
+                    waypointIndex--;
+                }
+                else
+                {
+                    waypointIndex++;
+                }
             }
         }
         else
         {
-            Destroy(gameObject);
+            if (waveConfig.GetShouldLoop())
+            {
+                if (isInBackwardsLoop)
+                {
+                    isInBackwardsLoop = false;
+                    waypointIndex++;
+                }
+                else
+                {
+                    isInBackwardsLoop = true;
+                    waypointIndex--;
+                }
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

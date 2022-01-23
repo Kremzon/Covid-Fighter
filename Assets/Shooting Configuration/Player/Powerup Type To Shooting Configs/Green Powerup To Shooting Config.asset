@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9ffaf14038399b4c9d2e18235456279, type: 3}
+  m_Name: Green Powerup To Shooting Config
+  m_EditorClassIdentifier: 
+  powerupType: 1
+  shootingConfigs:
+  - {fileID: 11400000, guid: 2f30edd0109cdb045a9c47bf2ae45958, type: 2}
+  - {fileID: 11400000, guid: 5aa39946bc30b1246af8ed4ebc790552, type: 2}
+  - {fileID: 11400000, guid: 0f59841d57f21cf4d9e43b7bcbec56ca, type: 2}

@@ -34,6 +34,11 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(WaitAndLoad("Game Over", sceneLoadDelay));
     }
 
+    public void LoadSettingsMenu()
+    {
+        SceneManager.LoadScene("Settings Menu");
+    }
+
     public void Quit()
     {
         Application.Quit();
